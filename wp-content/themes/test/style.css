@@ -1,0 +1,455 @@
+/*!
+Theme Name: Test Work
+*/
+body {
+    background-image: url("./img/bg/bg-lines.png");
+    /*Линия сверху*/
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: initial;
+    font-family: sans-serif;
+  }
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .relative {
+    position: relative;
+  }
+  .navigation-wrapper {
+    display: flex;
+    height: 128px; 
+    align-items: center;
+  }
+  .logo {
+    margin-right: 190px; /*Отступ от него направо!*/
+    margin-top: 0px; /*отступ сверху вниз*/
+    margin-left: 280px;
+  }
+  .navigation {
+    display: flex; /*Слова в одну строку*/
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'League-Spartan', sans-serif;
+    font-weight: 700;
+  }
+  .navigation__item {
+    margin-right: 20px; /*Расстояние между словами сверху*/
+  }
+  .navigation__item:last-child {
+    margin-right: 0;
+  }
+  .navigation__link {
+    color: #000;
+    text-decoration: none;
+    color: rgba(168, 163, 130, 0.9);
+    font-size: 7px; /*Размер букв*/
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 1px; /*Расстояние между буквами в словах*/
+    font-family: "League Spartan";
+  }
+  .read-more-link,
+  a.read-more-link {
+    color: #333333;
+    text-decoration: none;
+    font-family: 'League-Spartan', sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 5.4px;
+    position: relative;
+    padding-bottom: 10px;
+    display: inline-block;
+  }
+  .read-more-link:after,
+  a.read-more-link:after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    content: "";
+    height: 2px;
+    background-color: rgba(93, 168, 239, 0.7);
+  }
+  .title {
+    color: #333333;
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.42px;
+    text-align: center;
+  }
+  .subtitle { 
+    display: block;
+    color: #5da8ef;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 5.4px;
+    text-align: center;
+  }
+  .header {
+    position: relative;
+    margin-bottom: 95px;
+  }
+  .header-social__item:last-child {
+    margin-bottom: 0;
+  }
+  .slide-wrapper {
+    position: relative;
+  }
+  .slide-item {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+  }
+  .slide-item__desc {
+    position: absolute;
+    left: 450px;/*Отступ слева*/
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .slide-item__heading {
+    color: rgb(255, 255, 255);
+    font-family: "Playfair Display", serif;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 64px;
+    margin-bottom: 14px; /*Отступ от текста*/
+  }
+  .slide-item__heading span { 
+    display: block;
+    /*Выравнивание в одну строку*/
+    color: rgb(255, 255, 255);
+    font-family: "League-Spartan", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    top: -30px;
+    letter-spacing: 5.4px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    text-align: center;
+    position: absolute;
+    z-index: 414;
+    left: 80px;
+  
+  }
+  .slide-item__text {
+    font-size: 14px;
+    width: 390px;
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    text-align: center;
+    position: absolute;
+    width: 562px;
+    height: 39px;
+    z-index: 416;
+  }
+  .slide-item__img {
+    margin-top: -130px;
+    width: 100%;
+    height: 572px; /*Высота картинки*/
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    box-shadow: -16px 25px 65px rgba(11, 12, 17, 0.2);
+    z-index: -1;
+  }
+  .slide-item__img--bg-1 {
+    background-image: url("./img/img/img-header.jpg");
+    /*Картинка гора*/
+  }
+  .slide-controls {
+    position: absolute;
+    width: 81px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -300px; 
+  }
+  .slide-item__desc {
+    top: 150px;
+  }
+  .slide-controls-number {
+    font-family: 'League-Spartan', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+  }
+  .slide-controls__left {
+    position: absolute;
+    margin-top: -300px;
+    margin-right: 500px;
+  }
+  .slide-controls__right{
+    position: absolute;
+    margin-top: -300px;
+    right: 0px;
+  }
+  .slide-controls-slides {
+    position: absolute;
+    top:400px;
+    left: 700px;
+    margin-right: 400px;
+    color: #5da8ef;
+  }
+  .slide-controls-bottom {
+    top:250px;
+    left:650px;
+    position: absolute;
+    margin-right: 300px;
+    color: #ebebeb;
+  }
+  .slide-controls-get_started {
+    top:260px;
+    left:640px;
+    position: absolute;
+    margin-left: 50px;
+    color: #262626;
+  }
+  .quote {
+    padding-top: 5px;
+    padding-bottom: 110px;
+  }
+  .quote-wrapper {
+    width: 610px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+  }
+  .quote-wrapper:after {
+    content: "";
+    width: 2px;
+    height: 100px;
+    background-color: #5da8ef;
+    position: absolute;
+    bottom: -58px;
+    left: 50%;
+    transform: translate(-50%, 100%);
+  }
+  .quote__text {
+    color: rgba(49, 28, 15, 0.9);
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0.26px;
+    margin-bottom: 25px;
+  }
+  .quote__author {
+    color: rgba(110, 78, 48, 0.9);
+    font-family: "League Spartan", sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    line-height: 2;
+    text-transform: uppercase;
+    letter-spacing: 5.4px;
+  }
+  .club-description {
+    padding-top: 110px;
+    padding-bottom: 95px;
+  }
+  .club-description-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .club-description-video {
+    position: absolute;
+    right: 0;
+    top: 43px;
+    z-index: 1;
+  }
+  .club-description-video__control {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 68px;
+    height: 68px;
+    box-shadow: -2px -2px 35px rgba(0, 0, 0, 0.13);
+    background-color: #5da8ef;
+    border-radius: 60px;
+  }
+  .club-description-video__control img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-35%, -50%);
+  }
+  .club-description__text {
+    margin-top: 60px;
+    margin-left: 115px;
+    width: 340px;
+    font-family: 'Popins', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.35px;
+    margin-bottom: 45px;
+  }
+  .club-description__link {
+    margin-left: 115px;
+  }
+  .shop {
+    padding-top: 0px; 
+  }
+  .shop-slider {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 80px;
+  }
+  .board {
+    position: relative;
+    width: 1200px;
+    height: 235px;
+  }
+  .board__img-holder {
+    position: absolute;
+    left: -150px; /*Расстояние картинок*/
+    bottom: 0;
+    width: 250px;
+    height: 320px;
+  }
+  .board__img {
+    margin-left:250px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  .board-desc {
+    width: 210px;
+    position: absolute;
+    top: 196px;
+    left: 216px;
+  }
+  .board__cat {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+  }
+  .board__title {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.26px;
+  }
+  .board-buy {
+    margin-top: 38px;
+    margin-left: 55px;
+  }
+  .board-buy__price {
+    color: #ce60a8;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: -0.1px;
+    margin-bottom: 3px;
+  }
+  .board-buy__link {
+    font-family: 'League-Spartan', sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 5.4px;
+    margin-left: 4px;
+  }
+  .shop-link-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .icon_cart {
+    background-color: rgba(168, 163, 130, 0.1);
+  }
+  .icon_search {
+    background-color: rgba(168, 163, 130, 0.1);
+    margin-left: 20px;
+  }
+  .categories {
+    position: absolute;
+    top: 980px;
+    left: 400px;
+    display: flex; /*Слова в одну строку*/
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+    font-weight: 700;
+  }
+  .categories__item {
+    margin-right: 20px; /*Расстояние между словами сверху*/
+  }
+  .categories__item:last-child {
+    margin-right: 0;
+  }
+  .categories__link {
+    color: #000;
+    text-decoration: none;
+    color: rgba(168, 163, 130, 0.9);
+    font-size: 16px; /*Размер букв*/
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 1px; /*Расстояние между буквами в словах*/
+    font-family: "League Spartan";
+  }
+  .slide-controls-bottom-2 {
+    top:1720px;
+    left:650px;
+    position: absolute;
+    margin-right: 300px;
+    background-color: #643618;
+    z-index:1;
+  }
+  .slide-controls-load_more {
+    top:1725px;
+    left:620px;
+    position: absolute;
+    margin-left: 50px;
+    z-index:1;
+  }
+  .background-2_line {
+    position: relative;
+    top:50px;
+    width:1;
+  }
+  .counters {
+    top:-150px;
+    position: relative;
+    z-index:1;
+    letter-spacing: 160px;
+    margin-left: 100px;
+  }
+  .background-3_line {
+    position: relative;
+    top:-120px;
+    width:1;
+  }
+  .counters-4 {
+    top:-400px;
+    position: relative;
+    z-index:1;
+    letter-spacing: 120px;
+    margin-left: 100px;
+  }
